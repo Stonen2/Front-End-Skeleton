@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+  src: url('fonts/open-sans/Open-Sans-regular.eot');
+  src: url('fonts/open-sans/Open-Sans-regular.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans'),
+       local('Open-Sans-regular'),
+       url('fonts/open-sans/Open-Sans-regular.woff2') format('woff2'),
+       url('fonts/open-sans/Open-Sans-regular.woff') format('woff'),
+       url('fonts/open-sans/Open-Sans-regular.ttf') format('truetype'),
+       url('fonts/open-sans/Open-Sans-regular.svg#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-style: normal;
+  src: url('fonts/open-sans/Open-Sans-700.eot');
+  src: url('fonts/open-sans/Open-Sans-700.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Bold'),
+       local('Open-Sans-700'),
+       url('fonts/open-sans/Open-Sans-700.woff2') format('woff2'),
+       url('fonts/open-sans/Open-Sans-700.woff') format('woff'),
+       url('fonts/open-sans/Open-Sans-700.ttf') format('truetype'),
+       url('fonts/open-sans/Open-Sans-700.svg#OpenSans') format('svg');
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+	font-weight: 700;
+    src: url('opensans-condbold-webfont.woff2') format('woff2'),
+         url('opensans-condbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Robot Condensed';
+    src: url('RobotoCondensed-Bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Robot Condensed';
+    src: url('RobotoCondensed-BoldItalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Robot Condensed';
+    src: url('RobotoCondensed-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Robot Condensed';
+    src: url('RobotoCondensed-Italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}

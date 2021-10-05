@@ -1,0 +1,102 @@
+$breakpoint__high-res: 1280px;
+$breakpoint__low-res: 910px;
+$breakpoint__tablet: 790px;
+$breakpoint__phone: 640px;
+$breakpoint__small-phone: 360px;
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+%avatar {
+  border-radius:2rem;
+  background:#eeeeee;
+
+  position:relative;
+
+  overflow:hidden;
+
+  min-height:18rem;
+
+  position:relative;
+
+  & > * {
+    position:relative;
+    z-index:100;
+  }
+
+  &::before {
+    position:absolute;
+    bottom:-10rem;
+    left:-0.5rem;
+
+    z-index:0;
+
+    width:100%;
+
+    font-family:"FontAwesome";
+    text-align:center;
+    content:"\f007";
+    color:#dddddd;
+    font-size:22rem;
+  }
+
+  .image {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+
+    img { // discard for bg image?
+      width:100%;
+      height:auto;
+    }
+
+    .button {
+      // display:none;
+      opacity:0;
+      box-sizing:border-box;
+
+      position:absolute;
+      left:0;
+      top:6rem;
+
+      width:100%;
+      padding:0.6rem 1.6rem;
+      background:rgba(0,0,0,0.8);
+      border:0;
+      border-radius:0;
+      color:#ffffff;
+      font-style:normal;
+      text-align:center;
+
+      @include transition(opacity 0.5s ease, color 0.3s ease);
+
+      &:hover {
+        color:#3779dc;
+      }
+
+      &.remove {
+        top:10rem;
+        &::before {
+          font-family:"FontAwesome";
+          content:"\f05e";
+          margin-right:1rem;
+        }
+        &:hover {
+          color:#dd0000;
+        }
+      }
+    }
+
+    &:hover .button {
+      opacity:1;
+      // display:block;
+    }
+  }
+}

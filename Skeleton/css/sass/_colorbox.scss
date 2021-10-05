@@ -1,0 +1,50 @@
+#cboxOverlay {
+  background:#000000;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  
+  z-index:100;
+}
+
+#colorbox {
+  background:#ffffff;
+  z-index:900;
+  padding:2.0rem;
+  position:relative;
+  
+  border-radius:1.0rem;
+}
+
+#cboxClose {
+  position:absolute;
+  top:0;
+  right:0;
+  
+  width:3rem;
+  height:3rem;
+  
+  overflow:hidden;
+  text-indent:-9999rem;
+  
+  background:transparent;
+  border:0;
+  
+  &::before {
+    color:#222222;
+    display:block;
+    content:"X";
+    position:absolute;
+    top:0;
+    left:0;
+    
+    width:100%;
+    height:100%;
+    
+    line-height:3rem;
+    text-align:center;
+  }
+  
+}
